@@ -149,8 +149,5 @@ Cuando se corrijan o se agreguen más detalles, los mismos serán documentados a
 
 ---
 
-## 💬 Créditos
-
-Proyecto coordinado por [@conifva](https://github.com/conifva), con colaboración de [NOMBRE DE TU AMIGA].
 
 ---
