@@ -54,6 +54,7 @@ gzip -dk *.gz
 Entra al folder correspondiente (por ejemplo, `test_WES`, `test_WGS`, etc.) y ejecuta el script de configuración:
 
 ```bash
+chmod +x setup_annomaf_test_casesWES.sh
 ./setup_annomaf_test_casesWES.sh
 ```
 
@@ -144,8 +145,7 @@ Cuando se corrijan o se agreguen más detalles, los mismos serán documentados a
 ## 📌 Pendientes
 
 - [ ] Agregar ejemplos de salida de Funcotator.
-- [ ] Documentar comparaciones numéricas cruzadas.
-- [ ] Agregar gráfico resumen en `results/`.
+- [ ] Documentar comparaciones numéricas cruzadas (drive).
 
 ---
 
