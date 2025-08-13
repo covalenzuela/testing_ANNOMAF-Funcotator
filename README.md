@@ -45,6 +45,10 @@ data-test/
 gzip -dk *.gz
 ```
 
+El scrpt `input_dwnld.sh` no solo decarga los archivos sino que tambien se conecta al codigo `parseLBP.sh` (que tambien se puede ejecutar pos si solo) para usar solo un cromosoma de los archivos de biopsia liquida. Tambien posterior a la descarga de las muestras se puede ejecutar el script `convertir_vcfs_hg19_a_hg38.sh` que cambia la version de la anotacion para que todos los archivos a analizar en este testing tenga la misma (Hg38).
+
+> Cada codigo tiene su seccion de documentacion con el flag `-h` o `--help`
+
 ---
 
 ## 2️⃣ Preparación del Test
@@ -125,6 +129,8 @@ También se mostrará un resumen en la terminal:
 🧠 RAM: 15957MB / Máximo RSS: 502868 KB
 ⚙️ CPU: AMD Ryzen 5 5600 6-Core Processor
 ```
+
+> El campo **VCF size** solo reporta la informacion del primer archivo analizado en la ejecucion, mientras que **Variantes**, **Genes únicos** y **Accionables** son el total de todos los archivos output. A fin de cuentas no es muy preciso por lo que se implementa el script `annomaf_counts.sh` para que puedas ver los valores correctos de cada archivo `.maf` resultante.
 
 ---
 
